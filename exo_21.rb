@@ -1,17 +1,16 @@
 puts "Choisi un chiffre entre 1 et 25"
 userchoice = gets.chomp
-i = 1
+i=1
 j=userchoice.to_i
 k=1
-for i in 1..userchoice.to_i
-	for j in userchoice.to_i..1
-		puts " "*(j-i)
-		j = j-1
-		
-	for k in 1..userchoice.to_i
-		puts "#" * k
-		k=k+1
-i=i+1	
+until k>userchoice.to_i
+	until j==1
+	puts " "*j
+	j=j-1
+	until i > userchoice.to_i
+	puts "#"*i
+	i=i+1
+puts"#"*k
 end
-	end	
 	end
+end
